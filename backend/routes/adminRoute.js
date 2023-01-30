@@ -92,7 +92,7 @@ function getTime() {
 var storage = multer.diskStorage({
 
     destination: (req, file, callBack) => {
-        callBack(null, 'https://front-end-r0gn.onrender.com/src/assets/food')
+        callBack(null, 'C:\\Users\\DHANALAKSHMI V\\Desktop\\MY-PROJECT\\frontend\\src\\assets\\food')
     },
     filename: (req, file, callBack) => {
         callBack(null, `${getTime()}-${file.originalname}`)
@@ -177,7 +177,7 @@ router.get("/editfoodwithoutimage", verifyToken, (req, res, next) => {
         }
         else {
             console.log("Edited food without image");
-            return res.status(201).json(pizza);
+            return res.status(201).json(food);
         }
     })
 })
