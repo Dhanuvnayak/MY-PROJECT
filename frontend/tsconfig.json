@@ -7,9 +7,15 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noImplicitReturns": false,
+    "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "my-logger": [
+        "dist/my-logger"
+      ]
+    },
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
